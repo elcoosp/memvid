@@ -191,7 +191,7 @@ impl Memvid {
             cached_payload_end,
             generation: 0,
             lock_settings: LockSettings::default(),
-            lex_enabled: cfg!(feature = "lex"), // Enable by default if feature is enabled
+            lex_enabled: true, // Enable by default if feature is enabled
             lex_index: None,
             #[cfg(feature = "lex")]
             lex_storage,
